@@ -1,9 +1,47 @@
+:root {
+	--sborder: 5px;
+	--mborder: 10px;
+	--lborder: 15px;
+}
+
 body {
-  background-color: black;
+	background: linear-gradient(90deg, rgba(227,151,95,1) 50%, rgba(153,90,261,1) 100%);
+	margin: 0;
 }
 h1 {
-  color: white;
+	color: rgb(255,255,255);
+	display: inline-block;
 }
-h2 {
-  color: yellow;
+
+.defaultbox {
+	box-sizing: border-box;
+	
+	width: 25%;
+	padding: 0px;
+	
+	
+	margin: 0 auto;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	
+	border: 8px solid rgb(255,0,0);	
+	border-radius: var(--lborder);
+	background-color: rgb(150, 150, 150);
+	
+	
+}
+
+
+
+.navbar {
+	padding-bottom: 15px;
+	padding-top: 15px;
+	overflow: hidden;
+	margin: 0;
+	background-color: rgba(200, 162, 200, 0.5);
+}
+
+.navbar > * {
+	margin: 5px;
+	color: rgba(0,0,0, 0.8);
 }
