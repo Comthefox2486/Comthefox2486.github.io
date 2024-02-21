@@ -1,47 +1,91 @@
+/* It's a bit of a mess, but looks pretty good!*/
 :root {
 	--sborder: 5px;
 	--mborder: 10px;
 	--lborder: 15px;
+	--xlborder: 25px;
+	--com-orange: #ff6000;
 }
 
 body {
 	background: linear-gradient(90deg, rgba(227,151,95,1) 50%, rgba(153,90,261,1) 100%);
 	margin: 0;
 }
-h1 {
+h1, h2, h3, h4, h5, h6 {
 	color: rgb(255,255,255);
-	display: inline-block;
+	
 }
+
+.footer {
+	background-color: rgb(0,0,0);
+
+	display: inline;
+
+	text-align: center;
+
+	margin: 0 auto;
+	
+}
+
 
 .defaultbox {
 	box-sizing: border-box;
 	
-	width: 25%;
+	
+	width: 50%;
+	height: 10%;
 	padding: 0px;
 	
-	
-	margin: 0 auto;
+	text-align: center;
+
+	margin: auto;
 	margin-bottom: 10px;
 	margin-top: 10px;
 	
-	border: 8px solid rgb(255,0,0);	
-	border-radius: var(--lborder);
-	background-color: rgb(150, 150, 150);
+	border: 3px solid rgba(0,0,0,0.5);	
+	border-radius: var(--xlborder);
+	background-color: rgba(150, 150, 150, 0.5);
 	
 	
 }
 
-
+ul  {
+  padding-left: 0;
+}
+ul li {
+   list-style-position: inside;
+}
 
 .navbar {
-	padding-bottom: 15px;
-	padding-top: 15px;
 	overflow: hidden;
-	margin: 0;
 	background-color: rgba(200, 162, 200, 0.5);
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	width: 100%;
+	
+	
 }
 
-.navbar > * {
-	margin: 5px;
-	color: rgba(0,0,0, 0.8);
+.navbar > * {margin-right: 1%;}
+.navbar > h1 {color: var(--com-orange);}
+
+
+.navbar > img {
+	min-width: 0.01%;
+	max-width: 5%;
+	float: left;
+	display: block;
+	margin: 0px;
+	margin-right: 1%;
+
+
+
+}
+
+@media only screen and (max-width: 350px) {
+	.notnecessary {
+		display: none;
+	}
+	
 }
